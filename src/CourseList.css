@@ -1,0 +1,64 @@
+/* Redesigned CourseList.css */
+
+.course-list {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  background-color: #020b14;
+}
+
+.course-card {
+  background: #308eec;
+  border-radius: 15px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  width: 300px;
+  text-align: center;
+}
+
+.course-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+
+.course-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+}
+
+.course-card .course-title {
+  border-radius: 5px solid black;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #000000;
+  margin: 15px 0;
+}
+
+.course-card .course-description {
+  font-size: 1rem;
+  color: #6c757d;
+  padding: 0 15px;
+  margin-bottom: 15px;
+}
+
+.course-card .course-button {
+  display: inline-block;
+  margin: 15px auto;
+  padding: 10px 20px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #ffffff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 25px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.course-card .course-button:hover {
+  background-color: #0056b3;
+}
